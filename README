@@ -1,0 +1,38 @@
+NAME
+    Data::Dump::OneLine - Use Data::Dump to produce dumps that fit in one
+    line
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use Data::Dump::OneLine qw(dump_oneline dump1);
+
+     # just use like Data::Dump's dump()
+     dump_oneline(...);
+
+DESCRIPTION
+    This module uses Data::Dump to produce dumps that fits in one line, that
+    is, it strips all literal newlines. Great for dumping on to a
+    shell-style comment in code, etc.
+
+FUNCTIONS
+  dump_oneline(...)
+    Dump one or more data structures on a single line. Uses
+    Data::Dump::Filtered as the backend.
+
+  dump1
+    An alias for dump_oneline().
+
+SEE ALSO
+    Data::Dump
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+

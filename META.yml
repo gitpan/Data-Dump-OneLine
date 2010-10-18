@@ -1,0 +1,22 @@
+---
+abstract: 'Use Data::Dump to produce dumps that fit in one line'
+author:
+  - 'Steven Haryanto <stevenharyanto@gmail.com>'
+build_requires:
+  Module::Build: 0.3601
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.102340, CPAN::Meta::Converter version 2.102400'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Data-Dump-OneLine
+requires:
+  Data::Dump: 1.17
+  perl: 5.010
+resources:
+  homepage: http://search.cpan.org/dist/Data-Dump-OneLine/
+  repository: http://github.com/sharyanto/perl-Data-Dump-OneLine
+version: 0.01
