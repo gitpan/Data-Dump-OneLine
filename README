@@ -3,13 +3,13 @@ NAME
     line
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
-     use Data::Dump::OneLine qw(dump_oneline dump1);
+     use Data::Dump::OneLine qw(dump_one_line dump1);
 
      # just use like Data::Dump's dump()
-     dump_oneline(...);
+     dump_one_line(...);
 
 DESCRIPTION
     This module uses Data::Dump to produce dumps that fits in one line, that
@@ -17,12 +17,12 @@ DESCRIPTION
     shell-style comment in code, etc.
 
 FUNCTIONS
-  dump_oneline(...)
-    Dump one or more data structures on a single line. Uses
-    Data::Dump::Filtered as the backend.
+  dump_one_line(...)
+    Dump one or more data structures on a single line. Uses Data::Dump as
+    the backend.
 
   dump1
-    An alias for dump_oneline().
+    An alias for dump_one_line().
 
 SEE ALSO
     Data::Dump

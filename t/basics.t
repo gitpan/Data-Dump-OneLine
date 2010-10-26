@@ -4,12 +4,12 @@ use strict;
 use warnings;
 
 use Test::More tests => 4;
-use Data::Dump::OneLine qw(dump_oneline dump1);
+use Data::Dump::OneLine qw(dump_one_line dump1);
 
 #use lib "./t";
 #require "testlib.pl";
 
-is(dump_oneline(1), 1, "export dump_partial");
+is(dump_one_line(1), 1, "export dump_partial");
 is(dump1(1), 1, "export dumpp");
 
 is(dump1("a\nb"), q["a\\nb"], "arrayref 1");
