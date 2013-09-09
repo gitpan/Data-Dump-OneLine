@@ -3,7 +3,7 @@ NAME
     line
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
      use Data::Dump::OneLine qw(dump_one_line dump1);
@@ -22,7 +22,7 @@ FUNCTIONS
     the backend.
 
   dump1
-    An alias for dump_one_line().
+    A shorter alias for dump_one_line().
 
 SEE ALSO
     Data::Dump
@@ -31,7 +31,7 @@ AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Steven Haryanto.
+    This software is copyright (c) 2013 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
