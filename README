@@ -1,37 +1,54 @@
 NAME
-    Data::Dump::OneLine - Use Data::Dump to produce dumps that fit in one
-    line
+    Data::Dump::OneLine - Dump data structures as single-line strings
 
 VERSION
-    version 0.03
+    This document describes version 0.04 of Data::Dump::OneLine (from Perl
+    distribution Data-Dump-OneLine), released on 2014-10-03.
 
 SYNOPSIS
-     use Data::Dump::OneLine qw(dump_one_line dump1);
+     use Data::Dump::OneLine qw(dump);
 
-     # just use like Data::Dump's dump()
-     dump_one_line(...);
+     $str = dump(@list);
+     @copy_of_list = eval $str;
+
+     # or use it for easy debug printout
+     use Data::Dump::OneLine; dd localtime;
 
 DESCRIPTION
-    This module uses Data::Dump to produce dumps that fits in one line, that
-    is, it strips all literal newlines. Great for dumping on to a
-    shell-style comment in code, etc.
-
-FUNCTIONS
-  dump_one_line(...)
-    Dump one or more data structures on a single line. Uses Data::Dump as
-    the backend.
-
-  dump1
-    A shorter alias for dump_one_line().
+    This module is a fork of Data::Dump 1.22 which removes newlines in the
+    output so the output is a single line. Aside from that, the whitespaces
+    in the output are also minimized. If an output contains literal
+    newlines, that is considered a bug. You can use this module just like
+    Data::Dump.
 
 SEE ALSO
-    Data::Dump
+    JSON should also encode to a single-line string, but some data
+    structures (cyclical, contains globs or other special Perl data) cannot
+    be encoded out of the box to JSON.
+
+    Data::Dumper::OneLine strives to do the same for Data::Dumper, but last
+    time I tried it (at v0.05) it's still buggy.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Data-Dump-OneLine>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-Data-Dump-OneLine>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Data-Dump-OneLine>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
-    Steven Haryanto <stevenharyanto@gmail.com>
+    perlancar <perlancar@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Steven Haryanto.
+    This software is copyright (c) 2014 by perlancar@cpan.org.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
