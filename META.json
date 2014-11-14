@@ -54,7 +54,7 @@
          "web" : "https://github.com/sharyanto/perl-Data-Dump-OneLine"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018001"

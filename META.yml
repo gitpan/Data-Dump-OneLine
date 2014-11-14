@@ -23,7 +23,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Data-Dump-OneLine
   homepage: https://metacpan.org/release/Data-Dump-OneLine
   repository: git://github.com/sharyanto/perl-Data-Dump-OneLine.git
-version: '0.05'
+version: '0.06'
 x_Dist_Zilla:
   perl:
     version: '5.018001'

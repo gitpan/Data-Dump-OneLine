@@ -1,5 +1,12 @@
 Revision history for Data-Dump-OneLine
 
+0.06     2014-11-14 (PERLANCAR)
+
+         - Provide 'dump1' and 'dump_one_line' (again) for backward
+           compatibility now as alias to 'dmp'. Breaking this for the sake of
+           breaking was foolish.
+
+
 0.05     2014-11-14 (PERLANCAR)
 
          [INCOMPATIBLE CHANGES]

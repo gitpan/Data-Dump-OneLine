@@ -2,7 +2,7 @@ NAME
     Data::Dump::OneLine - Dump data structures as single-line strings
 
 VERSION
-    This document describes version 0.05 of Data::Dump::OneLine (from Perl
+    This document describes version 0.06 of Data::Dump::OneLine (from Perl
     distribution Data-Dump-OneLine), released on 2014-11-14.
 
 SYNOPSIS

@@ -1,12 +1,19 @@
 package Data::Dump::OneLine;
 
 our $DATE = '2014-11-14'; # DATE
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
+
+use 5.010001;
+use strict;
+use warnings;
 
 use Data::Dmp;
 
 our @ISA = qw(Data::Dmp);
-our @EXPORT = @Data::Dmp::EXPORT;
+our @EXPORT = (@Data::Dmp::EXPORT, 'dump1', 'dump_one_line');
+
+*dump1 = \&Data::Dmp::dmp;
+*dump_one_line = \&Data::Dmp::dmp;
 
 1;
 #ABSTRACT: Dump data structures as single-line strings
@@ -23,7 +30,7 @@ Data::Dump::OneLine - Dump data structures as single-line strings
 
 =head1 VERSION
 
-This document describes version 0.05 of Data::Dump::OneLine (from Perl distribution Data-Dump-OneLine), released on 2014-11-14.
+This document describes version 0.06 of Data::Dump::OneLine (from Perl distribution Data-Dump-OneLine), released on 2014-11-14.
 
 =head1 SYNOPSIS
 
