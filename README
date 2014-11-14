@@ -2,25 +2,14 @@ NAME
     Data::Dump::OneLine - Dump data structures as single-line strings
 
 VERSION
-    This document describes version 0.04 of Data::Dump::OneLine (from Perl
-    distribution Data-Dump-OneLine), released on 2014-10-03.
+    This document describes version 0.05 of Data::Dump::OneLine (from Perl
+    distribution Data-Dump-OneLine), released on 2014-11-14.
 
 SYNOPSIS
-     use Data::Dump::OneLine qw(dump);
-
-     $str = dump(@list);
-     @copy_of_list = eval $str;
-
-     # or use it for easy debug printout
-     use Data::Dump::OneLine; dd localtime;
+     use Data::Dump::OneLine; # exports dd and dmp
+     $str = dd(@list);
 
 DESCRIPTION
-    This module is a fork of Data::Dump 1.22 which removes newlines in the
-    output so the output is a single line. Aside from that, the whitespaces
-    in the output are also minimized. If an output contains literal
-    newlines, that is considered a bug. You can use this module just like
-    Data::Dump.
-
 SEE ALSO
     JSON should also encode to a single-line string, but some data
     structures (cyclical, contains globs or other special Perl data) cannot

@@ -17,12 +17,13 @@ meta-spec:
   version: '1.4'
 name: Data-Dump-OneLine
 requires:
+  Data::Dmp: '0'
   perl: '5.010001'
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Data-Dump-OneLine
   homepage: https://metacpan.org/release/Data-Dump-OneLine
   repository: git://github.com/sharyanto/perl-Data-Dump-OneLine.git
-version: '0.04'
+version: '0.05'
 x_Dist_Zilla:
   perl:
     version: '5.018001'
@@ -107,6 +108,10 @@ x_Dist_Zilla:
       name: '@Author::PERLANCAR/MetaConfig'
       version: '5.015'
     -
+      class: Dist::Zilla::Plugin::Rinci::InstallCompletion
+      name: '@Author::PERLANCAR/Rinci::InstallCompletion'
+      version: '0.02'
+    -
       class: Dist::Zilla::Plugin::OurDate
       name: '@Author::PERLANCAR/OurDate'
       version: '0.01'
@@ -175,6 +180,10 @@ x_Dist_Zilla:
               name: '@Author::PERLANCAR/postlude'
               version: '4.006'
             -
+              class: Pod::Weaver::Section::BashCompletion::PerinciCmdLine
+              name: '@Author::PERLANCAR/BashCompletion::PerinciCmdLine'
+              version: '0.02'
+            -
               class: Pod::Weaver::Section::Homepage::DefaultCPAN
               name: '@Author::PERLANCAR/Homepage::DefaultCPAN'
               version: '0.02'
@@ -215,7 +224,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Rinci::Validate
       name: '@Author::PERLANCAR/Rinci::Validate'
-      version: '0.15'
+      version: '0.19'
     -
       class: Dist::Zilla::Plugin::SetScriptShebang
       name: '@Author::PERLANCAR/SetScriptShebang'

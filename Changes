@@ -1,5 +1,12 @@
 Revision history for Data-Dump-OneLine
 
+0.05     2014-11-14 (PERLANCAR)
+
+         [INCOMPATIBLE CHANGES]
+
+         - Switch to Data::Dmp. Now only exports 'dd' and 'dmp'.
+
+
 0.04     2014-10-03 (PERLANCAR)
 
          - Replace with a modified Data::Dump 1.22 to minimize whitespaces,
